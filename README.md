@@ -4,4 +4,4 @@ This repository contains the source code for my personal website, built using **
 The site showcases my background, skills, projects, and resume in a clean, responsive layout.
 
 ## 🌐 Live Site
-https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/
+[https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/](https://jeremyrtapawan.github.io/Personal-Website/)
