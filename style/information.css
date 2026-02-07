@@ -1,0 +1,121 @@
+.content{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 25px;
+  margin-bottom: 100px;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px; /* Add space between title and grid */
+  margin-left: 40px;
+}
+.title p.Title-text {
+  font-weight: 600;
+  font-size: 24px;
+  color: #333;
+  margin: 15px 0 0 0; /* Add top margin, remove bottom margin */
+  text-align: center;
+}
+.about-me-text{
+  width: 600px;
+  background-color: rgb(65, 24, 132)  ;
+  padding: 3em;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+}
+.about-me-text p{
+  font-weight: 600;
+  font-size: 15px;
+}
+.program-skills{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 50px;
+  width: 600px;
+  background-color: rgb(65, 24, 132);
+  padding: 3em;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+
+}
+.topic{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.techskills{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 23px;
+  padding: 10px;
+  gap: 10px;
+  background-color: white;
+}
+.program-name{
+  font-weight: 600;
+}
+.topic{
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    color: black;
+    
+}
+.education-item{
+  width: 600px;
+  padding: 3em;
+  border-radius: 5px;
+  background-color: rgb(65, 24, 132);
+  border-style: solid;
+  border-width: 2px;
+
+}
+.wilfrid-logo{
+width: 125px;
+background-color: black;
+}
+.education-style{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 20px;
+} 
+.projects-item{
+  width: 600px;
+  padding: 3em;
+  border-radius: 5px;
+  background-color: rgb(65, 24, 132);
+  border-style: solid;
+  border-width: 2px;
+
+}
+.project-style{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.personal{
+  width: 500px;
+  
+}
+.programs{
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row; 
+}

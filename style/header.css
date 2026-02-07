@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+p{
+    color: black;
+}
+body{
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    background-color: rgb(192, 192, 192);
+min-height: 100%;}
+.header{
+display: flex;
+flex-direction: row;
+position: fixed;
+top: 0px;
+left: 0px;
+right: 0px;
+height: 75px;
+background-color: lightgray;
+align-items: center;
+justify-content: space-between;
+border: gray;
+border-style: solid;
+border-width: 2px;
+border-top: none;
+border-left: none;
+border-right: none;
+z-index: 100;
+
+}
+.Right-header {
+    display: flex;
+    flex: 1.0;
+    font-size: 20px;
+    height: 75px;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 700;
+    justify-content: center; /* Change from space-between to center */
+    z-index: 1;
+    padding-left: 20px; /* Add left padding for balance */
+    gap: 50px; /* Add consistent spacing between menu items */
+    margin-right: 20px;
+
+}
+.header a{
+    color: black;
+
+}
+.left-header{
+    font-weight: 700;
+    padding-left: 50px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    color: black;
+    flex: 0.5;
+}
+
+.Right-header:hover div{
+    cursor: pointer;
+
+}
+.home, .Me-header, .Experience-header, .Project-header, .Resume-header, .education-header {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px; /* Add some horizontal padding to each item */
+    transition: 0.5s;
+}
+
+/* Apply the hover effect to all menu items */
+.home:hover, .Me-header:hover, .Experience-header:hover, .Project-header:hover, 
+.Resume-header:hover, .education-header:hover {
+    color: white;
+    background-color: gray;
+}
+.Contact-header{
+    margin-right: 0;
+}
+
+.hamburger{
+    display: none;
+}
+.list-group{
+    display: none;
+    position: fixed;
+    top: 77px; /* Position right below the header */
+    right: 0;
+    background-color: lightgray;
+    width: 250px;
+    border-left: 2px solid gray;
+    border-bottom: 2px solid gray;
+    z-index: 99;
+    box-shadow: -2px 2px 5px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+}
+
+.list-group.active {
+    display: block;
+    transform: translateX(0);
+}
+
+.list-group-item {
+    list-style: none;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ccc;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.list-group-item:hover {
+    background-color: #ddd;
+    color: white;
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
+@media only screen and (max-width: 860px) {
+    .Right-header{
+    display: none;
+    }
+    .left-header{
+        flex: 1;
+    }
+    .Right-header{
+        flex:0;
+    }
+    .hamburger{
+        display: flex;
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+        transition: background-color 0.5s;
+    }
+    .hamburger:hover{
+        cursor: pointer;
+        background-color: gray;
+    }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 90px; 
+}
+
+.info {
+  scroll-margin-top: 90px;
+}
+
+
+
