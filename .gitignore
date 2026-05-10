@@ -1,0 +1,28 @@
+# Hide everything by default
+*
+
+# Allow core files
+!.gitignore
+!index.html
+
+# Allow CSS
+!css/
+!css/style.css
+
+# Allow JS
+!js/
+!js/main.js
+
+# Allow images (but not SVGs)
+!img/
+!img/*.png
+!img/*.webp
+!img/*.jpg
+!img/*.jpeg
+!img/*.gif
+
+# Hide media folder
+media/
+
+# Hide README
+README.md
