@@ -1,21 +1,43 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jeremy Tapawan · Cybersecurity Portfolio</title>
+    <meta
+      name="description"
+      content="Jeremy Tapawan, Computer Science student at Wilfrid Laurier University building hands-on SOC, SIEM, cloud security and vulnerability assessment labs. Open to Summer 2027 internships and co-op."
+    />
+    <meta name="theme-color" content="#050810" />
+    <meta property="og:title" content="Jeremy Tapawan · Cybersecurity Portfolio" />
+    <meta
+      property="og:description"
+      content="Hands-on security labs in Splunk, AWS, pfSense and Nessus. Open to Summer 2027 internships and co-op."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jeremyrtapawan.github.io/Personal-Website/" />
+    <meta property="og:image" content="https://jeremyrtapawan.github.io/Personal-Website/img/siem-triggered-alerts.jpg" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23050810'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='monospace' font-size='30' font-weight='700' fill='%2300f5ff'%3EJT%3C/text%3E%3C/svg%3E"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&family=Exo+2:wght@300;400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;500;600;700&family=Exo+2:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <nav>
-      <div class="nav-logo">// <span>JT</span>_SEC</div>
-      <ul>
+    <a class="skip-link" href="#projects">Skip to projects</a>
+
+    <nav aria-label="Main">
+      <a href="#hero" class="nav-logo" aria-label="Back to top">// <span>JT</span>_SEC</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="nav-menu">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -24,541 +46,516 @@
       </ul>
     </nav>
 
-    <section id="hero">
-      <div class="hero-grid"></div>
-      <div class="hero-glow"></div>
-      <div class="hero-two-col">
-        <div class="hero-content">
-          <div class="status-badge">
-            <span class="status-dot"></span>
-            Open to co-op, internships &amp; entry-level roles
-          </div>
-          <h1 class="hero-name">
-            Jeremy<br /><span class="accent">Tapawan</span>
-          </h1>
-          <p class="hero-title">
-            &gt; Cybersecurity Student &amp; Security Analyst<span
-              class="cursor"
-            ></span>
-          </p>
-          <p class="hero-desc">
-            Third-year Computer Science student at Wilfrid Laurier University
-            (GPA&nbsp;3.7/4.0) specialising in SIEM analysis, cloud security
-            monitoring, threat detection, and vulnerability assessment. Building
-            production-grade security labs, not just studying theory.
-          </p>
-          <div class="hero-ctas">
-            <a href="#projects" class="btn btn-primary">View Projects</a>
-            <a href="mailto:jeremytapawan17@gmail.com" class="btn btn-outline"
-              >Hire Me</a
-            >
-          </div>
-        </div>
-
-        <!--
-        HOW TO ADD YOUR PHOTO
-        1. Save your headshot as: img/jeremy.jpg
-        2. Delete the <div class="hero-photo-placeholder"> block below
-        3. Replace it with:
-             <img src="img/jeremy.jpg" alt="Jeremy Tapawan" class="hero-photo" />
-        4. Push to GitHub, done!
-      -->
-        <div class="hero-photo-wrap">
-          <div class="hero-photo-placeholder">
-            <div class="placeholder-avatar">JT</div>
-            <p class="placeholder-label">
-              <!-- Add photo-->
+    <main>
+      <section id="hero">
+        <div class="hero-grid"></div>
+        <div class="hero-glow"></div>
+        <div class="hero-two-col">
+          <div class="hero-content">
+            <div class="status-badge">
+              <span class="status-dot"></span>
+              Open to Summer 2027 internships &amp; co-op
+            </div>
+            <h1 class="hero-name">Jeremy<br /><span class="accent">Tapawan</span></h1>
+            <p class="hero-title">
+              &gt; CS Student &middot; Aspiring SOC Analyst<span class="cursor"></span>
             </p>
+            <p class="hero-desc">
+              Third-year Computer Science student at Wilfrid Laurier University (GPA&nbsp;3.7/4.0).
+              I build hands-on security labs, from SIEM detections in Splunk to cloud monitoring in
+              AWS and network vulnerability assessments, and document every one on GitHub.
+            </p>
+            <div class="hero-ctas">
+              <a href="#projects" class="btn btn-primary">View Projects</a>
+              <!--
+                RESUME BUTTON
+                Put your resume PDF at: resume/Jeremy_Tapawan_Resume.pdf
+                The button hides itself automatically until that file exists.
+              -->
+              <a href="resume/Jeremy_Tapawan_Resume.pdf" class="btn btn-outline" id="resume-btn" target="_blank" rel="noopener">Resume</a>
+              <a href="mailto:jeremytapawan17@gmail.com" class="btn btn-ghost">Email Me</a>
+            </div>
           </div>
-          <div class="hero-photo-ring"></div>
-          <div class="hero-photo-corner tl"></div>
-          <div class="hero-photo-corner tr"></div>
-          <div class="hero-photo-corner bl"></div>
-          <div class="hero-photo-corner br"></div>
-        </div>
-      </div>
-    </section>
 
-    <div class="stats-bar">
-      <div class="stat">
-        <span class="stat-num">5</span
-        ><span class="stat-label">Security Projects</span>
-      </div>
-      <div class="stat">
-        <span class="stat-num">7</span
-        ><span class="stat-label">Certifications</span>
-      </div>
-      <div class="stat">
-        <span class="stat-num">3.7</span
-        ><span class="stat-label">GPA / 4.0</span>
-      </div>
-      <div class="stat">
-        <span class="stat-num">2028</span
-        ><span class="stat-label">Graduating</span>
-      </div>
-    </div>
-
-    <section id="about">
-      <div class="section-inner about-wrap">
-        <div class="about-photo-col reveal">
           <!--
-          1. Save your headshot as img/jeremy.jpg
-          2. Replace the <div class="about-photo-placeholder"> block with:
-               <img src="img/jeremy.jpg" alt="Jeremy Tapawan" class="about-photo" />
-        -->
-          <div class="about-photo-frame">
-            <div class="about-photo-placeholder">
+            HOW TO ADD YOUR PHOTO
+            1. Save your headshot as: img/jeremy.jpg
+            2. Replace the <div class="hero-photo-placeholder"> block below with:
+                 <img src="img/jeremy.jpg" alt="Jeremy Tapawan" class="hero-photo" />
+          -->
+          <div class="hero-photo-wrap">
+            <div class="hero-photo-placeholder" aria-hidden="true">
               <div class="placeholder-avatar">JT</div>
             </div>
-            <div class="about-photo-corner tl"></div>
-            <div class="about-photo-corner tr"></div>
-            <div class="about-photo-corner bl"></div>
-            <div class="about-photo-corner br"></div>
-          </div>
-          <div class="about-card">
-            <div class="about-fact">
-              <span class="about-fact-label">Location</span
-              ><span class="about-fact-val">Mississauga, ON</span>
-            </div>
-            <div class="about-fact">
-              <span class="about-fact-label">University</span
-              ><span class="about-fact-val">Wilfrid Laurier</span>
-            </div>
-            <div class="about-fact">
-              <span class="about-fact-label">Program</span
-              ><span class="about-fact-val">BSc Computer Science</span>
-            </div>
-            <div class="about-fact">
-              <span class="about-fact-label">GPA</span
-              ><span class="about-fact-val">3.7 / 4.0</span>
-            </div>
-            <div class="about-fact">
-              <span class="about-fact-label">Graduating</span
-              ><span class="about-fact-val">June 2028</span>
-            </div>
+            <div class="hero-photo-ring"></div>
+            <div class="hero-photo-corner tl"></div>
+            <div class="hero-photo-corner tr"></div>
+            <div class="hero-photo-corner bl"></div>
+            <div class="hero-photo-corner br"></div>
           </div>
         </div>
+      </section>
 
-        <div class="about-text-col reveal">
-          <div class="section-header">
-            <p class="section-tag">Who I Am</p>
-            <h2>About <span>Me</span></h2>
-          </div>
-          <p class="about-bio">
-            Hey, I'm Jeremy, a third-year Computer Science student at Wilfrid
-            Laurier University with a deep passion for cybersecurity. I've spent
-            the past two years building real security skills through hands-on
-            home labs, replicating the exact tools and workflows used by actual
-            security analysts.
-          </p>
-          <p class="about-bio" style="margin-top: 1rem">
-            My focus is on the defensive side of security, SIEM monitoring,
-            threat detection, cloud security, and vulnerability assessment. I
-            care about understanding why systems fail, not just that they do.
-            That curiosity drives everything I build.
-          </p>
-          <p class="about-bio" style="margin-top: 1rem">
-            I'm actively pursuing my CompTIA Network+ and Security+
-            certifications, and I'm looking for co-op or internship
-            opportunities where I can contribute to a real security team.
-          </p>
-          <div class="about-interests">
-            <span class="about-interest"> SOC Analysis</span>
-            <span class="about-interest"> Cloud Security</span>
-            <span class="about-interest"> Threat Detection</span>
-            <span class="about-interest"> Vulnerability Research</span>
-            <span class="about-interest"> SIEM Engineering</span>
-            <span class="about-interest"> Linux</span>
-          </div>
-          <div class="about-ctas">
-            <a href="mailto:jeremytapawan17@gmail.com" class="btn btn-primary"
-              >Get In Touch</a
-            >
-            <a
-              href="https://linkedin.com/in/jeremy-tapawan-624495354"
-              target="_blank"
-              class="btn btn-outline"
-              >LinkedIn</a
-            >
-          </div>
+      <div class="stats-bar">
+        <div class="stat">
+          <span class="stat-num">5</span><span class="stat-label">Labs on GitHub</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">Top 7%</span><span class="stat-label">TryHackMe Global</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">117th</span><span class="stat-label">of 1,000+ CTF Teams</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">3.7</span><span class="stat-label">GPA / 4.0</span>
         </div>
       </div>
-    </section>
 
-    <section id="skills">
-      <div class="section-inner">
-        <div class="section-header reveal">
-          <p class="section-tag">Expertise</p>
-          <h2>Technical <span>Skills</span></h2>
-        </div>
-        <div class="skills-grid">
-          <div class="skill-card reveal">
-            <h3>SIEM &amp; Monitoring</h3>
-            <div class="skill-tags">
-              <span class="tag">Splunk</span>
-              <span class="tag">Log Correlation</span>
-              <span class="tag">Alert Triage</span>
-              <span class="tag">Event Analysis</span>
-              <span class="tag">Anomaly Detection</span>
+      <section id="about">
+        <div class="section-inner about-wrap">
+          <div class="about-photo-col reveal">
+            <!--
+              1. Save your headshot as img/jeremy.jpg
+              2. Replace the <div class="about-photo-placeholder"> block with:
+                   <img src="img/jeremy.jpg" alt="Jeremy Tapawan" class="about-photo" />
+            -->
+            <div class="about-photo-frame">
+              <div class="about-photo-placeholder" aria-hidden="true">
+                <div class="placeholder-avatar">JT</div>
+              </div>
+              <div class="about-photo-corner tl"></div>
+              <div class="about-photo-corner tr"></div>
+              <div class="about-photo-corner bl"></div>
+              <div class="about-photo-corner br"></div>
             </div>
+            <dl class="about-card">
+              <div class="about-fact"><dt>Location</dt><dd>Mississauga, ON</dd></div>
+              <div class="about-fact"><dt>University</dt><dd>Wilfrid Laurier</dd></div>
+              <div class="about-fact"><dt>Program</dt><dd>BSc Computer Science</dd></div>
+              <div class="about-fact"><dt>GPA</dt><dd>3.7 / 4.0</dd></div>
+              <div class="about-fact"><dt>Graduating</dt><dd>2028</dd></div>
+            </dl>
           </div>
 
-          <div class="skill-card reveal">
-            <h3>Threat Detection</h3>
-            <div class="skill-tags">
-              <span class="tag pink">Brute-Force Detection</span>
-              <span class="tag pink">Auth Abuse Analysis</span>
-              <span class="tag pink">False Positive Tuning</span>
-              <span class="tag pink">Incident Documentation</span>
+          <div class="about-text-col reveal">
+            <div class="section-header">
+              <p class="section-tag">Who I Am</p>
+              <h2>About <span>Me</span></h2>
             </div>
-          </div>
-
-          <div class="skill-card reveal">
-            <h3>Cloud &amp; IAM Security</h3>
-            <div class="skill-tags">
-              <span class="tag green">AWS CloudTrail</span>
-              <span class="tag green">CloudWatch</span>
-              <span class="tag green">IAM Least Privilege</span>
-              <span class="tag green">RBAC</span>
-              <span class="tag green">AccessDenied Analysis</span>
+            <p class="about-bio">
+              Hey, I'm Jeremy, a third-year Computer Science student at Wilfrid Laurier University
+              focused on defensive security. I learn by building: home labs that use the same tools
+              security analysts use every day, like <em>Splunk</em>, <em>Nessus</em>,
+              <em>Wireshark</em>, <em>pfSense</em> and <em>AWS CloudTrail</em>.
+            </p>
+            <p class="about-bio">
+              In each lab I set up the environment, simulate an attack, build a detection or fix,
+              and check that it actually works. I care about understanding why systems fail, not
+              just that they do.
+            </p>
+            <p class="about-bio">
+              I'm working toward CompTIA Network+ and Security+, and I'm looking for a Summer 2027
+              internship or co-op where I can contribute to a real security or IT team.
+            </p>
+            <div class="about-interests">
+              <span class="about-interest">SOC Analysis</span>
+              <span class="about-interest">Threat Detection</span>
+              <span class="about-interest">Cloud Security</span>
+              <span class="about-interest">Vulnerability Assessment</span>
+              <span class="about-interest">Linux</span>
             </div>
-          </div>
-
-          <div class="skill-card reveal">
-            <h3>Network &amp; Vulnerability</h3>
-            <div class="skill-tags">
-              <span class="tag">Nmap</span>
-              <span class="tag">Nessus</span>
-              <span class="tag">Wireshark</span>
-              <span class="tag">pfSense</span>
-              <span class="tag">Risk Prioritisation</span>
-            </div>
-          </div>
-
-          <div class="skill-card reveal">
-            <h3>Programming &amp; Scripting</h3>
-            <div class="skill-tags">
-              <span class="tag pink">Python</span>
-              <span class="tag pink">Bash</span>
-              <span class="tag pink">Java</span>
-              <span class="tag pink">CLI Automation</span>
-            </div>
-          </div>
-
-          <div class="skill-card reveal">
-            <h3>Secure Development</h3>
-            <div class="skill-tags">
-              <span class="tag green">E2E Encryption</span>
-              <span class="tag green">Next.js / Auth</span>
-              <span class="tag green">PostgreSQL</span>
-              <span class="tag green">Access Control</span>
-              <span class="tag green">OWASP Principles</span>
+            <div class="about-ctas">
+              <a href="#contact" class="btn btn-primary">Get In Touch</a>
+              <a href="https://linkedin.com/in/jeremy-tapawan-624495354" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="projects">
-      <div class="section-inner">
-        <div class="section-header reveal">
-          <p class="section-tag">Portfolio</p>
-          <h2>Security <span>Projects</span></h2>
+      <section id="skills">
+        <div class="section-inner">
+          <div class="section-header reveal">
+            <p class="section-tag">Toolkit</p>
+            <h2>Technical <span>Skills</span></h2>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-card reveal">
+              <h3>SIEM &amp; Detection</h3>
+              <div class="skill-tags">
+                <span class="tag">Splunk</span>
+                <span class="tag">SPL</span>
+                <span class="tag">Universal Forwarder</span>
+                <span class="tag">Windows Event Logs</span>
+                <span class="tag">Linux auth logs</span>
+                <span class="tag">Alert tuning</span>
+              </div>
+            </div>
+            <div class="skill-card reveal">
+              <h3>Threat Analysis</h3>
+              <div class="skill-tags">
+                <span class="tag pink">Brute-force detection</span>
+                <span class="tag pink">MITRE ATT&amp;CK</span>
+                <span class="tag pink">Alert triage</span>
+                <span class="tag pink">Attack simulation</span>
+                <span class="tag pink">Kali Linux</span>
+              </div>
+            </div>
+            <div class="skill-card reveal">
+              <h3>Cloud Security</h3>
+              <div class="skill-tags">
+                <span class="tag green">AWS CloudTrail</span>
+                <span class="tag green">CloudWatch Logs Insights</span>
+                <span class="tag green">CloudWatch Alarms</span>
+                <span class="tag green">IAM least privilege</span>
+              </div>
+            </div>
+            <div class="skill-card reveal">
+              <h3>Network &amp; Vulnerability</h3>
+              <div class="skill-tags">
+                <span class="tag">Nmap</span>
+                <span class="tag">Nessus</span>
+                <span class="tag">Wireshark</span>
+                <span class="tag">pfSense</span>
+                <span class="tag">Firewall hardening</span>
+                <span class="tag">TCP/IP &amp; DNS</span>
+              </div>
+            </div>
+            <div class="skill-card reveal">
+              <h3>Programming &amp; Scripting</h3>
+              <div class="skill-tags">
+                <span class="tag pink">Python</span>
+                <span class="tag pink">Java</span>
+                <span class="tag pink">TypeScript</span>
+                <span class="tag pink">Bash</span>
+                <span class="tag pink">PowerShell</span>
+              </div>
+            </div>
+            <div class="skill-card reveal">
+              <h3>Web &amp; Secure Dev</h3>
+              <div class="skill-tags">
+                <span class="tag green">Next.js</span>
+                <span class="tag green">NextAuth (OAuth)</span>
+                <span class="tag green">Prisma</span>
+                <span class="tag green">Web Crypto (AES-GCM)</span>
+                <span class="tag green">Git &amp; GitHub</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="projects-grid">
-          <div class="project-card reveal">
-            <span class="project-type">SIEM / SOC</span>
-            <h3>SIEM Home Lab (Mini SOC)</h3>
-            <p>
-              Built a mini SOC using Splunk to ingest and correlate Windows and
-              Linux logs. Developed custom detection searches for authentication
-              anomalies, service failures, and suspicious activity.
-            </p>
-            <div class="skill-tags">
-              <span class="tag">Splunk</span>
-              <span class="tag">Linux</span>
-              <span class="tag">Windows</span>
-              <span class="tag">VirtualBox</span>
-            </div>
-            <div class="project-links">
-              <a
-                href="https://github.com/JeremyRTapawan/SIEM-Home-Lab"
-                target="_blank"
-                class="proj-link"
-                >⬡ GitHub</a
-              >
-            </div>
+      </section>
+
+      <section id="projects">
+        <div class="section-inner">
+          <div class="section-header reveal">
+            <p class="section-tag">Portfolio</p>
+            <h2>Security <span>Projects</span></h2>
+            <p class="section-sub">Click a project image to see real screenshots from the lab.</p>
           </div>
 
-          <div class="project-card reveal">
-            <span class="project-type">Detection Engineering</span>
-            <h3>SSH Brute Force Detection</h3>
+          <!-- NOW BUILDING -->
+          <article class="building-card reveal">
+            <img class="building-cover" src="img/covers/honeypot.svg" alt="Honeypot cover: attackers converging on a honeycomb trap on port 22" loading="lazy" />
+            <div class="building-body">
+            <div class="building-head">
+              <span class="project-type">Now Building</span>
+              <span class="wip-badge">In Progress</span>
+            </div>
+            <h3>Live Honeypot Threat Dashboard</h3>
             <p>
-              Built detection logic identifying SSH brute-force attacks using
-              failed authentication thresholds. Validated accuracy by simulating
-              live attacks and tuning to achieve zero false positives.
+              An internet-facing SSH honeypot (Cowrie) in the cloud that records real attacker
+              activity: credentials tried, commands run and malware download attempts. A Python
+              pipeline loads the logs into PostgreSQL, and a web dashboard will show the attacks
+              live.
             </p>
+            <ol class="build-steps">
+              <li>Cloud server &amp; honeypot</li>
+              <li>Python &rarr; PostgreSQL pipeline</li>
+              <li>Live web dashboard</li>
+              <li>Investigation write-ups</li>
+            </ol>
             <div class="skill-tags">
-              <span class="tag pink">Python</span>
-              <span class="tag pink">Splunk</span>
-              <span class="tag pink">Linux auth logs</span>
-            </div>
-            <div class="project-links">
-              <a
-                href="https://github.com/JeremyRTapawan/SSH-Detection-Alerts"
-                target="_blank"
-                class="proj-link"
-                >⬡ GitHub</a
-              >
-            </div>
-          </div>
-
-          <div class="project-card reveal">
-            <span class="project-type">Network Security</span>
-            <h3>Virtual Network Vulnerability Assessment</h3>
-            <p>
-              Conducted full network reconnaissance and vulnerability scanning
-              to identify exposed services and misconfigurations. Produced
-              structured reports with CVSS-scored findings and remediation
-              steps.
-            </p>
-            <div class="skill-tags">
-              <span class="tag green">pfSense</span>
-              <span class="tag green">Nmap</span>
-              <span class="tag green">Nessus</span>
-              <span class="tag green">Wireshark</span>
-            </div>
-            <div class="project-links">
-              <a
-                href="https://github.com/JeremyRTapawan/Virtual-Network-Vulnerability-Assessment"
-                target="_blank"
-                class="proj-link"
-                >⬡ GitHub</a
-              >
-            </div>
-          </div>
-
-          <div class="project-card reveal">
-            <span class="project-type">Cloud Security</span>
-            <h3>AWS Cloud Security Monitoring Lab</h3>
-            <p>
-              Simulated unauthorized AWS API activity to test detection
-              coverage. Built CloudWatch Logs Insights queries to catch
-              AccessDenied and privilege misuse events. Documented SOC-style
-              workflows.
-            </p>
-            <div class="skill-tags">
-              <span class="tag">AWS CloudTrail</span>
-              <span class="tag">CloudWatch</span>
+              <span class="tag">Cowrie</span>
+              <span class="tag">Azure</span>
               <span class="tag">Python</span>
-              <span class="tag">boto3</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Docker</span>
             </div>
-            <div class="project-links">
-              <a
-                href="https://github.com/JeremyRTapawan/AWS-Cloud-Security-Monitoring-Alerting-Lab"
-                target="_blank"
-                class="proj-link"
-                >⬡ GitHub</a
-              >
+            </div>
+          </article>
+
+          <div class="projects-grid">
+            <!-- SIEM -->
+            <article class="project-card reveal">
+              <button class="project-thumb" data-gallery="siem" aria-label="View SIEM Home Lab screenshots">
+                <img src="img/covers/siem.svg" alt="SIEM Home Lab cover: Windows and Linux logs flowing into a SIEM that raises an alert" loading="lazy" />
+                <span class="thumb-hint">&#9654; View 4 screenshots</span>
+              </button>
+              <span class="project-type">SIEM / SOC</span>
+              <h3>SIEM Home Lab (Mini SOC)</h3>
+              <p>
+                Deployed Splunk Enterprise on Ubuntu and forwarded Windows Event Logs and Linux auth
+                logs with Universal Forwarders. Built scheduled alerts for Windows failed logons
+                (Event ID 4625) and SSH brute force, then simulated attacks to confirm both fired.
+              </p>
+              <div class="skill-tags">
+                <span class="tag">Splunk</span>
+                <span class="tag">Windows</span>
+                <span class="tag">Ubuntu</span>
+                <span class="tag">VirtualBox</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/JeremyRTapawan/SIEM-Home-Lab" target="_blank" rel="noopener" class="proj-link">&#x2B21; GitHub</a>
+              </div>
+            </article>
+
+            <!-- SSH DETECTION -->
+            <article class="project-card reveal">
+              <button class="project-thumb" data-gallery="ssh" aria-label="View SSH Brute Force Detection screenshots">
+                <img src="img/covers/ssh.svg" alt="SSH brute force cover: repeated failed passwords in auth.log triggering a T1110 alert" loading="lazy" />
+                <span class="thumb-hint">&#9654; View 4 screenshots</span>
+              </button>
+              <span class="project-type">Detection Engineering</span>
+              <h3>SSH Brute Force Detection &amp; Alerting</h3>
+              <p>
+                Simulated an SSH brute-force attack from Kali with a Python script, forwarded the
+                Ubuntu auth logs to Splunk, and built a threshold-based correlation search that
+                alerts on repeated failed logins from one source (MITRE ATT&amp;CK T1110).
+              </p>
+              <div class="skill-tags">
+                <span class="tag pink">Python</span>
+                <span class="tag pink">Splunk</span>
+                <span class="tag pink">Kali Linux</span>
+                <span class="tag pink">auth.log</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/JeremyRTapawan/SSH-Detection-Alerts" target="_blank" rel="noopener" class="proj-link">&#x2B21; GitHub</a>
+              </div>
+            </article>
+
+            <!-- VULN ASSESSMENT -->
+            <article class="project-card reveal">
+              <button class="project-thumb" data-gallery="vuln" aria-label="View Vulnerability Assessment screenshots">
+                <img src="img/covers/vuln.svg" alt="Vulnerability assessment cover: scanner, firewall, and hosts with port 445 blocked" loading="lazy" />
+                <span class="thumb-hint">&#9654; View 5 screenshots</span>
+              </button>
+              <span class="project-type">Network Security</span>
+              <h3>Virtual Network Vulnerability Assessment</h3>
+              <p>
+                Segmented a lab network behind a default-deny pfSense firewall and scanned Windows
+                and Ubuntu targets with Nessus from Kali. Blocked unneeded services such as SMB, then
+                re-scanned to confirm the related findings were gone, verifying with Nmap and
+                Wireshark.
+              </p>
+              <div class="skill-tags">
+                <span class="tag green">pfSense</span>
+                <span class="tag green">Nessus</span>
+                <span class="tag green">Nmap</span>
+                <span class="tag green">Wireshark</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/JeremyRTapawan/Virtual-Network-Vulnerability-Assessment" target="_blank" rel="noopener" class="proj-link">&#x2B21; GitHub</a>
+              </div>
+            </article>
+
+            <!-- AWS -->
+            <article class="project-card reveal">
+              <div class="project-thumb project-cover"><img src="img/covers/aws.svg" alt="AWS monitoring cover: CloudTrail catching AccessDenied API calls, with the detection query" loading="lazy" /></div>
+              <span class="project-type">Cloud Security</span>
+              <h3>AWS Cloud Security Monitoring Lab</h3>
+              <p>
+                Generated unauthorized API calls with a limited-permission IAM user and captured
+                them in CloudTrail. Wrote a CloudWatch Logs Insights query that surfaces AccessDenied
+                errors by user, API call and source IP, with CloudWatch Alarms for alerting.
+              </p>
+              <div class="skill-tags">
+                <span class="tag">CloudTrail</span>
+                <span class="tag">CloudWatch</span>
+                <span class="tag">IAM</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/JeremyRTapawan/AWS-Cloud-Security-Monitoring-Alerting-Lab" target="_blank" rel="noopener" class="proj-link">&#x2B21; GitHub</a>
+              </div>
+            </article>
+
+            <!-- SECURE NOTES -->
+            <article class="project-card reveal">
+              <div class="project-thumb project-cover"><img src="img/covers/notes.svg" alt="Secure Notes cover: a note encrypted with AES-256-GCM into ciphertext" loading="lazy" /></div>
+              <span class="project-type">Secure Development &middot; WIP</span>
+              <h3>Secure Notes App</h3>
+              <p>
+                A Next.js and TypeScript notes app with Google OAuth sign-in through NextAuth, a
+                dashboard restricted to signed-in users, and 256-bit AES-GCM encryption helpers built
+                on the Web Crypto API, using a fresh random IV for every note.
+              </p>
+              <div class="skill-tags">
+                <span class="tag pink">Next.js</span>
+                <span class="tag pink">TypeScript</span>
+                <span class="tag pink">NextAuth</span>
+                <span class="tag green">Web Crypto</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/JeremyRTapawan/Security-Notes" target="_blank" rel="noopener" class="proj-link">&#x2B21; GitHub</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="certs">
+        <div class="section-inner">
+          <div class="section-header reveal">
+            <p class="section-tag">Credentials</p>
+            <h2>Certs &amp; <span>Training</span></h2>
+          </div>
+
+          <h3 class="sub-head reveal">Competitions &amp; Practice</h3>
+          <div class="training-grid">
+            <a class="training-card reveal" href="https://tryhackme.com/p/JeremyT06" target="_blank" rel="noopener">
+              <span class="training-num">Top 7%</span>
+              <span class="training-title">TryHackMe</span>
+              <span class="training-sub">74 rooms completed &middot; 12 badges &middot; JeremyT06</span>
+            </a>
+            <div class="training-card reveal">
+              <span class="training-num">117th</span>
+              <span class="training-title">scriptCTF 2026</span>
+              <span class="training-sub">Team Xylyl &middot; 1,000+ teams &middot; 3,077 pts</span>
+            </div>
+            <div class="training-card reveal">
+              <span class="training-num">Jan 2027</span>
+              <span class="training-title">Riipen Level Up</span>
+              <span class="training-sub">Industry project program &middot; Jan&ndash;Mar 2027</span>
             </div>
           </div>
 
-          <div class="project-card reveal">
-            <span class="project-type">Secure Development</span>
-            <h3>Secure Notes App</h3>
-            <p>
-              Designed auth flows using RBAC and least-privilege IAM principles.
-              Implemented end-to-end encryption to protect user data.
-              Self-identified and fixed an IDOR and privilege escalation
-              vulnerability.
-            </p>
-            <div class="skill-tags">
-              <span class="tag pink">Next.js</span>
-              <span class="tag pink">NextAuth</span>
-              <span class="tag pink">PostgreSQL</span>
-              <span class="tag green">E2EE</span>
+          <h3 class="sub-head reveal">Certifications</h3>
+          <div class="certs-grid">
+            <div class="cert-card wip reveal">
+              <div class="cert-icon cert-icon-img y">
+                <img src="img/comptia-security-plus.webp" alt="" />
+              </div>
+              <div class="cert-info">
+                <h4 class="y">CompTIA Security+</h4>
+                <p>CompTIA &middot; expected 2027</p>
+                <span class="wip-badge">In Progress</span>
+              </div>
             </div>
-            <div class="project-links">
-              <a
-                href="https://github.com/JeremyRTapawan"
-                target="_blank"
-                class="proj-link"
-                >⬡ GitHub</a
-              >
+            <div class="cert-card wip reveal">
+              <div class="cert-icon cert-icon-img y">
+                <img src="img/Comptia-Network-Plus.webp" alt="" />
+              </div>
+              <div class="cert-info">
+                <h4 class="y">CompTIA Network+</h4>
+                <p>CompTIA &middot; expected 2027</p>
+                <span class="wip-badge">In Progress</span>
+              </div>
+            </div>
+            <div class="cert-card wip reveal">
+              <div class="cert-icon cert-icon-img y">
+                <img src="img/blob.png" alt="" />
+              </div>
+              <div class="cert-info">
+                <h4 class="y">AWS Cloud Quest</h4>
+                <p>Cloud Practitioner &middot; Amazon</p>
+                <span class="wip-badge">In Progress</span>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="sub-head reveal">Completed Courses &middot; IBM SkillsBuild</h3>
+          <div class="certs-grid">
+            <div class="cert-card reveal">
+              <div class="cert-icon cert-icon-img"><img src="img/800px-IBM_logo.svg.webp" alt="" /></div>
+              <div class="cert-info"><h4>Cloud Security</h4><p>IBM SkillsBuild</p></div>
+            </div>
+            <div class="cert-card reveal">
+              <div class="cert-icon cert-icon-img"><img src="img/800px-IBM_logo.svg.webp" alt="" /></div>
+              <div class="cert-info"><h4>Vulnerability Management</h4><p>IBM SkillsBuild</p></div>
+            </div>
+            <div class="cert-card reveal">
+              <div class="cert-icon cert-icon-img"><img src="img/800px-IBM_logo.svg.webp" alt="" /></div>
+              <div class="cert-info"><h4>System &amp; Network Security</h4><p>IBM SkillsBuild</p></div>
+            </div>
+            <div class="cert-card reveal">
+              <div class="cert-icon cert-icon-img"><img src="img/800px-IBM_logo.svg.webp" alt="" /></div>
+              <div class="cert-info"><h4>GRC &amp; Data Privacy</h4><p>IBM SkillsBuild</p></div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="certs">
-      <div class="section-inner">
-        <div class="section-header reveal">
-          <p class="section-tag">Credentials</p>
-          <h2>Certifi<span>cations</span></h2>
-        </div>
-        <div class="certs-grid">
-          <div class="cert-card wip reveal">
-            <div class="cert-icon cert-icon-img y">
-              <img src="img/Comptia-Network-Plus.webp" alt="CompTIA Network+" />
-            </div>
-            <div class="cert-info">
-              <h4 class="y">CompTIA Network+</h4>
-              <p>CompTIA</p>
-              <span class="wip-badge">In Progress</span>
-            </div>
+      <section id="contact">
+        <div class="section-inner">
+          <div class="section-header reveal">
+            <p class="section-tag">Reach Out</p>
+            <h2>Get In <span>Touch</span></h2>
           </div>
+          <div class="contact-wrap">
+            <div class="contact-text reveal">
+              <p>
+                I'm looking for Summer 2027 internships and co-op roles in cybersecurity, SOC
+                analysis and IT. If you're hiring, want to collaborate, or just want to talk
+                security, I'd love to hear from you.
+              </p>
+              <div class="contact-links">
+                <a href="mailto:jeremytapawan17@gmail.com" class="contact-link">
+                  <span class="clink-icon" aria-hidden="true">&#x2709;</span>jeremytapawan17@gmail.com
+                </a>
+                <a href="https://github.com/JeremyRTapawan" target="_blank" rel="noopener" class="contact-link">
+                  <span class="clink-icon" aria-hidden="true">&#x2B21;</span>github.com/JeremyRTapawan
+                </a>
+                <a href="https://linkedin.com/in/jeremy-tapawan-624495354" target="_blank" rel="noopener" class="contact-link">
+                  <span class="clink-icon clink-in" aria-hidden="true">in</span>linkedin.com/in/jeremy-tapawan
+                </a>
+                <a href="tel:6478556005" class="contact-link">
+                  <span class="clink-icon" aria-hidden="true">&#x260E;</span>647-855-6005
+                </a>
+              </div>
+            </div>
 
-          <div class="cert-card wip reveal">
-            <div class="cert-icon cert-icon-img y">
-              <img
-                src="img/comptia-security-plus.webp"
-                alt="CompTIA Security+"
-              />
-            </div>
-            <div class="cert-info">
-              <h4 class="y">CompTIA Security+</h4>
-              <p>CompTIA</p>
-              <span class="wip-badge">In Progress</span>
-            </div>
-          </div>
-
-          <div class="cert-card reveal">
-            <div class="cert-icon cert-icon-img">
-              <img src="img/blob.png" alt="AWS Cloud Quest" />
-            </div>
-            <div class="cert-info">
-              <h4>AWS Cloud Quest</h4>
-              <p>Cloud Practitioner · Amazon</p>
-            </div>
-          </div>
-
-          <div class="cert-card reveal">
-            <div class="cert-icon cert-icon-img">
-              <img src="img/800px-IBM_logo.svg.webp" alt="IBM SkillsBuild" />
-            </div>
-            <div class="cert-info">
-              <h4>Cloud Security</h4>
-              <p>IBM SkillsBuild</p>
-            </div>
-          </div>
-
-          <div class="cert-card reveal">
-            <div class="cert-icon cert-icon-img">
-              <img src="img/800px-IBM_logo.svg.webp" alt="IBM SkillsBuild" />
-            </div>
-            <div class="cert-info">
-              <h4>GRC &amp; Data Privacy</h4>
-              <p>IBM SkillsBuild</p>
-            </div>
-          </div>
-
-          <div class="cert-card reveal">
-            <div class="cert-icon cert-icon-img">
-              <img src="img/800px-IBM_logo.svg.webp" alt="IBM SkillsBuild" />
-            </div>
-            <div class="cert-info">
-              <h4>System &amp; Network Security</h4>
-              <p>IBM SkillsBuild</p>
-            </div>
-          </div>
-
-          <div class="cert-card reveal">
-            <div class="cert-icon cert-icon-img">
-              <img src="img/800px-IBM_logo.svg.webp" alt="IBM SkillsBuild" />
-            </div>
-            <div class="cert-info">
-              <h4>Vulnerability Management</h4>
-              <p>IBM SkillsBuild</p>
-            </div>
+            <form class="contact-form reveal" id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="cname">Name</label>
+                <input type="text" id="cname" name="name" autocomplete="name" placeholder="Jane Smith" required />
+              </div>
+              <div class="form-group">
+                <label for="cemail">Email</label>
+                <input type="email" id="cemail" name="email" autocomplete="email" placeholder="jane@company.com" required />
+              </div>
+              <div class="form-group">
+                <label for="cmsg">Message</label>
+                <textarea id="cmsg" name="message" placeholder="Tell me about the opportunity..." required></textarea>
+              </div>
+              <button type="submit" class="btn-send">Send Message &rarr;</button>
+              <p class="form-note" id="form-note" role="status" aria-live="polite">
+                Opens your email app with the message ready to send.
+              </p>
+            </form>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="section-inner">
-        <div class="section-header reveal">
-          <p class="section-tag">Reach Out</p>
-          <h2>Get In <span>Touch</span></h2>
-        </div>
-        <div class="contact-wrap">
-          <div class="contact-text reveal">
-            <p>
-              I'm a third-year Computer Science student at Wilfrid Laurier
-              University actively looking for co-op placements, internships, and
-              entry-level roles in cybersecurity and SOC analysis.
-            </p>
-            <p style="margin-top: 0.75rem">
-              Whether you're hiring, want to collaborate, or just talk security,
-              I'd love to connect.
-            </p>
-            <div class="contact-links">
-              <a href="mailto:jeremytapawan17@gmail.com" class="contact-link">
-                <span class="clink-icon">✉</span>jeremytapawan17@gmail.com
-              </a>
-              <a
-                href="https://github.com/JeremyRTapawan"
-                target="_blank"
-                class="contact-link"
-              >
-                <span class="clink-icon">⬡</span>github.com/JeremyRTapawan
-              </a>
-              <a
-                href="https://linkedin.com/in/jeremy-tapawan-624495354"
-                target="_blank"
-                class="contact-link"
-              >
-                <span
-                  class="clink-icon"
-                  style="
-                    font-family: &quot;Rajdhani&quot;, sans-serif;
-                    font-weight: 700;
-                    font-size: 0.85rem;
-                  "
-                  >in</span
-                >
-                linkedin.com/in/jeremy-tapawan
-              </a>
-              <a href="tel:6478556005" class="contact-link">
-                <span class="clink-icon">📞</span>647-855-6005
-              </a>
-            </div>
-          </div>
-
-          <div class="contact-form reveal">
-            <div class="form-group">
-              <label for="cname">Name</label>
-              <input type="text" id="cname" placeholder="Jane Smith" />
-            </div>
-            <div class="form-group">
-              <label for="cemail">Email</label>
-              <input type="email" id="cemail" placeholder="jane@company.com" />
-            </div>
-            <div class="form-group">
-              <label for="cmsg">Message</label>
-              <textarea
-                id="cmsg"
-                placeholder="Tell me about the opportunity..."
-              ></textarea>
-            </div>
-            <button class="btn-send" onclick="handleSend()">
-              Send Message
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer>
-      <p>
-        // <span>Jeremy Tapawan</span> · Cybersecurity Portfolio ·
-        <span id="yr"></span>
-      </p>
-      <p class="footer-sub">
-        Wilfrid Laurier University · Computer Science · Milton, ON
-      </p>
+      <p>// <span>Jeremy Tapawan</span> &middot; Cybersecurity Portfolio &middot; <span id="yr"></span></p>
+      <p class="footer-sub">Wilfrid Laurier University &middot; Computer Science</p>
     </footer>
+
+    <!-- Screenshot viewer -->
+    <dialog class="gallery" id="gallery" aria-label="Project screenshots">
+      <div class="gallery-top">
+        <p class="gallery-title" id="gallery-title"></p>
+        <button class="gallery-close" id="gallery-close" aria-label="Close">&times;</button>
+      </div>
+      <figure class="gallery-figure">
+        <img id="gallery-img" src="" alt="" />
+        <figcaption id="gallery-caption"></figcaption>
+      </figure>
+      <div class="gallery-nav">
+        <button id="gallery-prev" aria-label="Previous screenshot">&larr; Prev</button>
+        <span id="gallery-count"></span>
+        <button id="gallery-next" aria-label="Next screenshot">Next &rarr;</button>
+      </div>
+    </dialog>
 
     <script src="js/main.js"></script>
   </body>
